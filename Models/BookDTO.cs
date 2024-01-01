@@ -7,5 +7,4 @@ public class BookDTO{
     public int YearPublished { get; set; }
     public float Score { get; set; }
 
-    public ICollection<Author> Authors { get; set; }
 }

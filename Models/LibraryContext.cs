@@ -10,13 +10,10 @@ public class LibraryContext : DbContext
     {
     }
 
-public DbSet<Lab2.Models.Author> Author { get; set; } = default!;
+public DbSet<Author> Authors { get; set; } = default!;
 
-public DbSet<Lab2.Models.Book> Book { get; set; } = default!;
+public DbSet<Book> Books { get; set; } = default!;
 
-public DbSet<Lab2.Models.LibraryCard> LibraryCard { get; set; } = default!;
+public DbSet<LibraryCard> LibraryCards { get; set; } = default!;
 
-public DbSet<Lab2.Models.BookDTO> BookDTO { get; set; } = default!;
-    
-    
 }
