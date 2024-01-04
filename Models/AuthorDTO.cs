@@ -1,9 +1,8 @@
-namespace Lab2.Models;
+﻿namespace Lab2.Models;
 
-public class Author{
+public class AuthorDTO
+{
     public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-
-    public ICollection<Book>? Books { get; set; }
 }
