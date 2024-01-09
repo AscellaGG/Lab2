@@ -1,8 +1,8 @@
-﻿namespace Lab2.Models;
+﻿namespace Lab2.Models.DTOs;
 
 public class AuthorDTO
 {
-    public int Id { get; set; }
+    public int AuthorId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
 }

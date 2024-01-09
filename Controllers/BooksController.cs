@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Lab2.Models;
 using Microsoft.CodeAnalysis.Operations;
+using Lab2.Models.DTOs;
 
 namespace Lab2.Controllers;
 
@@ -26,7 +27,7 @@ public class BooksController : ControllerBase
     public async Task<ActionResult<IEnumerable<BookDTO>>> GetBook()
     {
         return await _context.Books
-            .Select(x => BookToDTO(x)) 
+            .Select(x => BookToDTO(x))
             .ToListAsync();
     }
 
@@ -47,24 +48,19 @@ public class BooksController : ControllerBase
     // PUT: api/Books/5
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutBook(int id, BookDTO bookDTO)
+    public async Task<IActionResult> PutBook(int id, Book book)
     {
-        if (id != bookDTO.Id)
+        if (id != book.BookId)
         {
             return BadRequest();
         }
 
-        var book = await _context.Books.FindAsync(id);
-
-        if(book == null)
+        if (book == null)
         {
             return NotFound();
         }
 
-        book.Title = bookDTO.Title;
-        book.ISBN = bookDTO.ISBN;
-        book.YearPublished = bookDTO.YearPublished;
-        book.Score = bookDTO.Score;
+        _context.Entry(book).State = EntityState.Modified;
 
         try
         {
@@ -124,7 +120,7 @@ public class BooksController : ControllerBase
     private static BookDTO BookToDTO(Book book) =>
         new BookDTO
         {
-            Id = book.BookId,
+            BookId = book.BookId,
             Title = book.Title,
             ISBN = book.ISBN,
             YearPublished = book.YearPublished,

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Lab2.Models;
+using Lab2.Models.DTOs;
 
 namespace Lab2.Controllers;
 
@@ -22,9 +23,11 @@ public class AuthorsController : ControllerBase
 
     // GET: api/Authors
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<AuthorDTO>>> GetAuthor()
+    public async Task<ActionResult<IEnumerable<Author>>> GetAuthor()
     {
-        return await _context.Authors.;
+        return await _context.Authors
+            .Include(a => a.Books)
+            .ToListAsync();
     }
 
     // GET: api/Authors/5
@@ -46,7 +49,7 @@ public class AuthorsController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutAuthor(int id, AuthorDTO authorDTO)
     {
-        if (id != authorDTO.Id)
+        if (id != authorDTO.AuthorId)
         {
             return BadRequest();
         }
@@ -89,7 +92,7 @@ public class AuthorsController : ControllerBase
 
         return CreatedAtAction(
             nameof(GetAuthor),
-            new { id = author.Id },
+            new { id = author.AuthorId },
             AuthorToDTO(author));
     }
 
@@ -111,13 +114,13 @@ public class AuthorsController : ControllerBase
 
     private bool AuthorExists(int id)
     {
-        return _context.Authors.Any(e => e.Id == id);
+        return _context.Authors.Any(e => e.AuthorId == id);
     }
 
     private static AuthorDTO AuthorToDTO(Author author) =>
         new AuthorDTO
         {
-            Id = author.Id,
+            AuthorId = author.AuthorId,
             FirstName = author.FirstName,
             LastName = author.LastName
         };
