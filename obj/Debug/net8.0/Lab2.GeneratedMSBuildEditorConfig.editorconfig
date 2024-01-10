@@ -17,55 +17,55 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab2
 build_property.RootNamespace = Lab2
-build_property.ProjectDir = C:\Users\otili\source\repos\Lab2\
+build_property.ProjectDir = C:\Users\otili\Documents\_iths\Databaser\Lab2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\otili\source\repos\Lab2
+build_property.MSBuildProjectDirectory = C:\Users\otili\Documents\_iths\Databaser\Lab2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Author/Create.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Author/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Author/Delete.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Author/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Author/Details.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Author/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Author/Edit.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Author/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Author/Index.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Author/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/LibraryCard/Create.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/LibraryCard/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhcmRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/LibraryCard/Delete.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/LibraryCard/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhcmRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/LibraryCard/Details.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/LibraryCard/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhcmRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/LibraryCard/Edit.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/LibraryCard/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhcmRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/LibraryCard/Index.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/LibraryCard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeUNhcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otili/source/repos/Lab2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/otili/Documents/_iths/Databaser/Lab2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

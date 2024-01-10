@@ -25,7 +25,9 @@ public class LibraryCardsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<LibraryCard>>> GetLibraryCards()
     {
-        return await _context.LibraryCards.Include(c => c.Loans).ToListAsync();
+        return await _context.LibraryCards
+            .Include(c => c.Loans)
+            .ToListAsync();
     }
 
     // GET: api/LibraryCards/5

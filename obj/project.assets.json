@@ -8443,19 +8443,21 @@
   },
   "packageFolders": {
     "C:\\Users\\otili\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\otili\\source\\repos\\Lab2\\Lab2.csproj",
+      "projectUniqueName": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\Lab2.csproj",
       "projectName": "Lab2",
-      "projectPath": "C:\\Users\\otili\\source\\repos\\Lab2\\Lab2.csproj",
+      "projectPath": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\Lab2.csproj",
       "packagesPath": "C:\\Users\\otili\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\otili\\source\\repos\\Lab2\\obj\\",
+      "outputPath": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\otili\\AppData\\Roaming\\NuGet\\NuGet.Config",

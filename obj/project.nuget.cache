@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VkpHIv9I9lsdeNgSCtMdNstykNoD07JY+klRA6Y68RR+3W0o/bat3ezAUG6B76+r4jx0bMHRy3OHiysIHS2osA==",
+  "dgSpecHash": "q/70fUa6EV3yp624Vz6Ujlktb0NG/kEwcqWbMS1350VBhTsXfdPOYJK5kbCpVzx/HmQbHUQMthQopkeReJ1kSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\otili\\source\\repos\\Lab2\\Lab2.csproj",
+  "projectFilePath": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\Lab2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\otili\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\otili\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -16,18 +16,18 @@ builder.Services.AddControllers().AddJsonOptions(opt =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<LibraryContext>(opt =>
-{
-    opt.UseInMemoryDatabase("Library");
-
-    opt.LogTo(m => Debug.WriteLine(m)).EnableSensitiveDataLogging(true);
-});
-
 //builder.Services.AddDbContext<LibraryContext>(opt =>
 //{
-//    var connectionString = builder.Configuration.GetConnectionString("LocalDb");
-//    opt.UseSqlServer(connectionString);
+//    opt.UseInMemoryDatabase("Library");
+
+//    opt.LogTo(m => Debug.WriteLine(m)).EnableSensitiveDataLogging(true);
 //});
+
+builder.Services.AddDbContext<LibraryContext>(opt =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("LocalDb");
+    opt.UseSqlServer(connectionString);
+});
 
 var app = builder.Build();
 

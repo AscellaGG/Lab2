@@ -24,10 +24,10 @@ public class BooksController : ControllerBase
 
     // GET: api/Books
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<BookDTO>>> GetBook()
+    public async Task<ActionResult<IEnumerable<Book>>> GetBook()
     {
         return await _context.Books
-            .Select(x => BookToDTO(x))
+            .Include(book => book.Authors)
             .ToListAsync();
     }
 

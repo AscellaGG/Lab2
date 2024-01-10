@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L2EhP1YCuh5iuBtiks62x/ObA2Blhb7wZgo6YmfjxNE=",
+  "Hash": "3a0o8gqyPAS3NKgLJbvRIpmLj3gAcAdwIidjhdpdcSA=",
   "Source": "Lab2",
   "BasePath": "_content/Lab2",
   "Mode": "Default",
@@ -47,10 +47,10 @@
       "OriginalItemSpec": "C:\\Users\\otili\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\otili\\source\\repos\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Lab2.styles.css",
+      "Identity": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Lab2.styles.css",
       "SourceId": "Lab2",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\otili\\source\\repos\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Lab2",
       "RelativePath": "Lab2.styles.css",
       "AssetKind": "All",
@@ -63,7 +63,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\otili\\source\\repos\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Lab2.styles.css"
+      "OriginalItemSpec": "C:\\Users\\otili\\Documents\\_iths\\Databaser\\Lab2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Lab2.styles.css"
     }
   ]
 }
