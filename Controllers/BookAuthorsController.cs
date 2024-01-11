@@ -26,8 +26,8 @@ namespace Lab2.Controllers
         public async Task<ActionResult<IEnumerable<BookAuthor>>> GetBookAuthors()
         {
             return await _context.BookAuthors
-                .Include(bookAuthor => bookAuthor.Book)
-                .Include(bookAuthor => bookAuthor.Author)
+                .Include(ba => ba.Book)
+                .Include(ba => ba.Author)
                 .ToListAsync();
         }
 
@@ -95,6 +95,8 @@ namespace Lab2.Controllers
 
             var bookAuthor = new BookAuthor
             {
+                BookId = bookAuthorDTO.BookId,
+                AuthorId = bookAuthorDTO.AuthorId,
                 Book = book,
                 Author = author
             };

@@ -756,8 +756,6 @@ C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.AssemblyInfo
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.csproj.CoreCompileInputs.cache
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.RazorAssemblyInfo.cache
-C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.RazorAssemblyInfo.cs
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\Lab2.sourcelink.json
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\otili\Documents\_iths\Databaser\Lab2\obj\Debug\net8.0\staticwebassets.development.json

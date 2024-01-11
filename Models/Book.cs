@@ -7,5 +7,5 @@ public class Book{
     public int YearPublished { get; set; }
     public float Score { get; set; }
 
-    public List<Author> Authors { get; set; }
+    public List<BookAuthor>? BookAuthors { get; set; }
 }

@@ -22,21 +22,6 @@ namespace Lab2.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AuthorBook", b =>
-                {
-                    b.Property<int>("AuthorsAuthorId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("BooksBookId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AuthorsAuthorId", "BooksBookId");
-
-                    b.HasIndex("BooksBookId");
-
-                    b.ToTable("AuthorBook");
-                });
-
             modelBuilder.Entity("Lab2.Models.Author", b =>
                 {
                     b.Property<int>("AuthorId")
@@ -158,21 +143,6 @@ namespace Lab2.Migrations
                     b.ToTable("Loans");
                 });
 
-            modelBuilder.Entity("AuthorBook", b =>
-                {
-                    b.HasOne("Lab2.Models.Author", null)
-                        .WithMany()
-                        .HasForeignKey("AuthorsAuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Lab2.Models.Book", null)
-                        .WithMany()
-                        .HasForeignKey("BooksBookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Lab2.Models.BookAuthor", b =>
                 {
                     b.HasOne("Lab2.Models.Author", "Author")
@@ -182,7 +152,7 @@ namespace Lab2.Migrations
                         .IsRequired();
 
                     b.HasOne("Lab2.Models.Book", "Book")
-                        .WithMany()
+                        .WithMany("BookAuthors")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -209,6 +179,11 @@ namespace Lab2.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Card");
+                });
+
+            modelBuilder.Entity("Lab2.Models.Book", b =>
+                {
+                    b.Navigation("BookAuthors");
                 });
 
             modelBuilder.Entity("Lab2.Models.LibraryCard", b =>

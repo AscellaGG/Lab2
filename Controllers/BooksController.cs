@@ -27,7 +27,7 @@ public class BooksController : ControllerBase
     public async Task<ActionResult<IEnumerable<Book>>> GetBook()
     {
         return await _context.Books
-            .Include(book => book.Authors)
+            .Include(book => book.BookAuthors)
             .ToListAsync();
     }
 
@@ -93,7 +93,7 @@ public class BooksController : ControllerBase
         return CreatedAtAction(
             nameof(GetBook),
             new { id = book.BookId },
-            BookToDTO(book));
+            book);
     }
 
     // DELETE: api/Books/5

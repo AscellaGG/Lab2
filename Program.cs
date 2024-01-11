@@ -27,6 +27,8 @@ builder.Services.AddDbContext<LibraryContext>(opt =>
 {
     var connectionString = builder.Configuration.GetConnectionString("LocalDb");
     opt.UseSqlServer(connectionString);
+
+    opt.LogTo(m => Debug.WriteLine(m)).EnableSensitiveDataLogging(true);
 });
 
 var app = builder.Build();

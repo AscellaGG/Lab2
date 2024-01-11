@@ -26,7 +26,7 @@ public class AuthorsController : ControllerBase
     public async Task<ActionResult<IEnumerable<Author>>> GetAuthor()
     {
         return await _context.Authors
-            .Include(a => a.Books)
+            //.Include(author => author.Books)
             .ToListAsync();
     }
 
