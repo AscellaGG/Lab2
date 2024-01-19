@@ -1,10 +1,78 @@
 @Lab2_HostAddress = https://localhost:7246
 
-GET {{Lab2_HostAddress}}/weatherforecast/
-Accept: application/json
+
+
+//Skapa författare
+POST {{Lab2_HostAddress}}/api/authors
+Content-Type: application/json
+
+{
+  //AuthorDTO
+}
 
 ###
 
-GET {{Lab2_HostAddress}}/api/authors
+//Skapa bok
+POST {{Lab2_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  //BookDTO
+}
+
+###
+
+//Skapa lånekort
+POST {{Lab2_HostAddress}}/api/librarycards
+Content-Type: application/json
+
+{
+  //LibraryCardDTO
+}
+
+###
+
+//Lista alla böcker
+GET {{Lab2_HostAddress}}/api/books
+
+###
+
+//Info om specifik bok
+GET {{Lab2_HostAddress}}/api/books/0
+
+###
+
+//Låna bok
+POST {{Lab2_HostAddress}}/api/loans/BorrowBook
+Content-Type: application/json
+
+{
+  //LoanDTO
+}
+
+###
+
+//Lämna tillbaka bok
+PUT {{Lab2_HostAddress}}/api/loans/ReturnBook/0
+Content-Type: application/json
+
+{
+  //Loan
+}
+
+###
+
+//Ta bort lånekort
+DELETE {{Lab2_HostAddress}}/api/librarycards/0
+
+###
+
+//Ta bort bok
+DELETE {{Lab2_HostAddress}}/api/books/0
+
+###
+
+//Ta bort författare
+DELETE {{Lab2_HostAddress}}/api/authors/0
 
 ###

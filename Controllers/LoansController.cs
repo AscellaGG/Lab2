@@ -47,13 +47,10 @@ namespace Lab2.Controllers
 
         // PUT: api/Loans/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("ReturnBook/{id}")]
-        public async Task<IActionResult> ReturnBook(int id, Loan loan)
+        [HttpPut("ReturnBook")]
+        public async Task<IActionResult> ReturnBook(int loanId)
         {
-            if (id != loan.LoanId)
-            {
-                return BadRequest();
-            }
+            Loan? loan = await _context.Loans.FindAsync(loanId);
 
             loan.ReturnDate = DateTime.Now;
 
@@ -65,7 +62,7 @@ namespace Lab2.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!LoanExists(id))
+                if (!LoanExists(loanId))
                 {
                     return NotFound();
                 }
